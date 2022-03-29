@@ -49,7 +49,7 @@ def main(p,
         # Use multiple cpus to speed this up, the actual work is being done in the routine.py script
         y2 = parmap.map(vj_tr, gs, ts = ts, organism = organism, chains = chains, pm_processes = n_cpus, pm_pbar = True)
         y_df = pd.concat(y2)
-        fs.append(os.path.join(pout, f"{f}_radii_estimate_{sim}.tsv"))
+        fs.append(f"{f}_radii_estimate_{sim}.tsv")
         y_df.to_csv(os.path.join(pout, f"{f}_radii_estimate_{sim}.tsv"), sep = "\t", index = False)
 
     # After thsi stage all of the computation is done. 
