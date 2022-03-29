@@ -32,7 +32,7 @@ arguments:
   -n_cpus N_CPUS      availale cpus to distribute
   -n_runs N_RUNS      number of times to estimate ideal radius
   -organism ORGANISM  human or mouse
-  -chains CHAINS      comma separated list of beta beta,alpha or alpha
+  -chains CHAINS      comma separated list of beta beta,alpha or alpha (currently only beta will work)
 ```
 
 ```bash
