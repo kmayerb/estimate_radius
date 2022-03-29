@@ -6,10 +6,9 @@ example of more intensive TCR radius estimation
 
 ## requirements 
 
-Must have tcrdist3, olga, and tcrsampler installed with Britannova data downloaded.
+Must have tcrdist3, olga, and tcrsampler installed with Britanova or other appropriate data downloaded.
 
-
-If not you can install that file easily:
+If you've never run tcrsampler before, do this first:
 
 ```python
 import tcrsampler 
@@ -21,6 +20,7 @@ ts.download_background_file('britanova_human_beta_t_cb.tsv.sampler.tsv.zip')
 
 Estimate radius per clone using dense V-J gene matched synthetic neighborhoos
 
+```
 arguments:
   -h, --help          show this help message and exit
   -p P                path to input file
@@ -30,7 +30,7 @@ arguments:
   -n_runs N_RUNS      number of times to estimate ideal radius
   -organism ORGANISM  human or mouse
   -chains CHAINS      comma separated list of beta beta,alpha or alpha
-
+```
 
 ```bash
 python radii_estimation.py -p data -pout output -f dash_human.csv -n_cpus 2 -n_runs 10 -organism human -chains beta
