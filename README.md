@@ -16,7 +16,10 @@ If you've never run tcrsampler before, do this first:
 ```python
 import tcrsampler 
 ts = tcrsampler.TCRsampler()
+# For Human, Beta 
 ts.download_background_file('britanova_human_beta_t_cb.tsv.sampler.tsv.zip')
+# For Mouse
+ts.download_background_file( 'ruggiero_mouse_sampler.zip')
 ```
 
 ## Run from the commandline
